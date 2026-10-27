@@ -270,3 +270,81 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
   .lb-prev, .lb-next { top: auto; bottom: 8px; transform: none; }
   .pager a { font-size: var(--step-0); }
 }
+
+/* ---------- prose extras */
+.prose ul { padding-left: 1.2em; margin: 0 0 1em; }
+.prose ul li::marker { color: var(--signal); }
+.prose h3 { font-size: var(--step-0); font-weight: 700; margin: 0 0 0.3em; }
+
+/* ---------- thesis: home band */
+.thesis-band {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 0.4rem var(--gutter);
+  margin-top: clamp(56px, 8vw, 104px); text-decoration: none; color: inherit; align-items: end;
+}
+.thesis-band-flip { display: block; background: #fff; max-width: 280px; aspect-ratio: 520 / 803; overflow: hidden; }
+.thesis-band-flip img { width: 100%; height: 100%; object-fit: cover; }
+.thesis-band-text { display: flex; flex-direction: column; gap: 0.4rem; max-width: 52ch; padding-bottom: 6px; }
+.thesis-band-title { font-size: var(--step-3); font-weight: 800; font-stretch: 115%; letter-spacing: -0.03em; line-height: 0.95; }
+.thesis-band-link { margin-top: 0.6rem; text-decoration: underline; text-underline-offset: 0.18em; }
+.thesis-band:hover .thesis-band-title, .thesis-band:hover .thesis-band-link { color: var(--signal); }
+.card--sketch .card-media { background: #fff; }
+.card--sketch .card-media img { object-position: 50% 20%; }
+
+/* ---------- thesis page */
+.thesis-version { margin: 14px 0 0; font-weight: 600; font-stretch: 108%; }
+.thesis-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 40px clamp(32px, 6vw, 96px); align-items: start; }
+.flipbook { margin: 0; position: sticky; top: 20px; }
+.flipbook-stage {
+  position: relative; background: #fff; aspect-ratio: 520 / 803; height: min(803px, calc(100vh - 230px)); width: auto; max-width: 100%; margin-right: auto;
+  cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none;
+  box-shadow: 1px 1px 0 #d9dbdf, 2px 2px 0 #fff, 3px 3px 0 #d9dbdf, 4px 4px 0 #fff, 5px 5px 0 #d9dbdf;
+}
+.flipbook-stage.is-dragging { cursor: grabbing; }
+.flipbook-stage img { width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+.flipbook-corner {
+  position: absolute; right: 0; bottom: 0; width: 46px; height: 46px;
+  background: linear-gradient(135deg, transparent 50%, var(--plate) 50%, #c4c7cc);
+  transition: width .2s ease, height .2s ease;
+}
+.flipbook-stage:hover .flipbook-corner { width: 64px; height: 64px; }
+.flipbook figcaption { margin-top: 16px; font-size: var(--step--1); color: var(--mute); max-width: 52ch; }
+.flipbook-controls { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; color: var(--ink); }
+.flip-play { font: inherit; font-weight: 600; color: var(--on-signal); background: var(--signal); border: 0; padding: 8px 14px; cursor: pointer; white-space: nowrap; }
+.flip-play[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.flip-range { flex: 1; accent-color: var(--signal); min-width: 0; }
+.flip-count { font-variant-numeric: tabular-nums; min-width: 4.5em; text-align: right; }
+.prose .changed { list-style: none; padding: 0; margin: 0 0 1em; }
+.changed li { padding: 14px 0; border-top: 1px solid var(--line); }
+.changed li:last-child { border-bottom: 1px solid var(--line); }
+.changed p { margin: 0; }
+.pull { margin: 2.2em 0; padding: 0; }
+.pull p { font-size: var(--step-2); font-weight: 700; font-stretch: 108%; line-height: 1.15; letter-spacing: -0.01em; }
+.button { display: inline-block; background: var(--ink); color: var(--paper); padding: 12px 18px; text-decoration: none; font-weight: 600; }
+.button:hover { background: var(--signal); color: var(--on-signal); }
+.thesis-after { margin-top: clamp(64px, 9vw, 120px); }
+.contents h2 { font-size: var(--step-1); font-stretch: 108%; margin-bottom: 12px; }
+.toc { list-style: none; padding: 0; margin: 0; max-width: var(--measure); }
+.toc li { display: flex; justify-content: space-between; gap: 1rem; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.toc .pg { color: var(--mute); font-variant-numeric: tabular-nums; }
+
+/* ---------- progress log */
+.log { margin-top: clamp(56px, 8vw, 112px); }
+.log-list { list-style: none; padding: 0; margin: 0; }
+.log-entry { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 8fr); gap: 8px clamp(24px, 4vw, 64px); padding: 18px 0; border-top: 1px solid var(--line); }
+.log-entry time { color: var(--mute); font-variant-numeric: tabular-nums; }
+.log-body { max-width: var(--measure); }
+.log-body h3 { font-size: var(--step-1); margin-bottom: 0.4em; }
+.log-images { list-style: none; padding: 0; margin: 12px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+.log-images a { display: block; background: var(--plate); aspect-ratio: 1; overflow: hidden; cursor: zoom-in; }
+.log-images img { width: 100%; height: 100%; object-fit: cover; }
+
+@media (max-width: 1000px) {
+  .thesis-grid { grid-template-columns: 1fr; }
+  .flipbook { position: static; max-width: 420px; }
+  .flipbook-stage { height: auto; width: 100%; }
+}
+@media (max-width: 640px) {
+  .thesis-band { grid-template-columns: 1fr; }
+  .thesis-band-flip { max-width: 200px; }
+  .log-entry { grid-template-columns: 1fr; }
+}

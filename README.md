@@ -26,7 +26,7 @@ The `CNAME` file in this folder already tells GitHub Pages to serve the site on 
 
 ## Editing
 
-- Text lives directly in the HTML files: `index.html`, `about.html` and one file per project in `work/`.
+- Text and projects live in `_build/content.py`; run `python3 _build/build.py` to regenerate the pages. See `_build/UPDATING.md`.
 - Images are in `assets/img/`. Each image has a large version (`-l.jpg`, max 1800 px) and a medium one (`-m.jpg`, max 900 px).
 - Colours and type are set at the top of `assets/css/style.css`.
 
