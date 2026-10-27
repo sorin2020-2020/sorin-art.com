@@ -6,8 +6,8 @@ ARTIST = {
     "tagline": "Interactive media artist working with AI, electronics, sound and moving image.",
     "location": "Wassenaar, the Netherlands",
     "email": "s.a.d_2026@outlook.com",
-    "instagram": "https://www.instagram.com/sorin_artfrommyheart/",
-    "instagram_handle": "@sorin_artfrommyheart",
+    "instagram": "https://www.instagram.com/s.a.d.2026/",
+    "instagram_handle": "@s.a.d.2026",
 }
 
 GROUPS = [
