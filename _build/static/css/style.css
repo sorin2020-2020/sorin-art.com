@@ -348,3 +348,41 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
   .thesis-band-flip { max-width: 200px; }
   .log-entry { grid-template-columns: 1fr; }
 }
+
+/* ---------- jewellery */
+.jewel-band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 24px var(--gutter); margin-top: clamp(56px, 8vw, 104px); text-decoration: none; color: inherit; align-items: end; }
+.jewel-band-text { display: flex; flex-direction: column; gap: 0.4rem; max-width: 40ch; }
+.jewel-band:hover .thesis-band-title, .jewel-band:hover .thesis-band-link { color: var(--signal); }
+.jewel-strip { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.jewel-strip li { aspect-ratio: 3 / 4; background: var(--plate); overflow: hidden; }
+.jewel-strip img { width: 100%; height: 100%; object-fit: cover; }
+.jewellery h1 { font-size: var(--step-3); font-stretch: 115%; font-weight: 800; letter-spacing: -0.03em; line-height: 0.95; }
+.jewel-hero { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 5fr 4fr 3fr; gap: 10px; align-items: stretch; height: clamp(320px, 52vw, 720px); }
+.jewel-hero li { background: var(--plate); overflow: hidden; min-height: 0; }
+.jewel-hero a { display: block; height: 100%; cursor: zoom-in; }
+.jewel-hero img { width: 100%; height: 100%; object-fit: cover; }
+.pieces { margin-top: clamp(56px, 8vw, 112px); }
+.piece { padding-top: 18px; border-top: 1px solid var(--ink); margin-bottom: clamp(48px, 6vw, 80px); }
+.piece-head { max-width: var(--measure); margin-bottom: 20px; }
+.piece-head time { color: var(--mute); font-variant-numeric: tabular-nums; }
+.piece-head h3 { font-size: var(--step-2); font-stretch: 112%; margin: 6px 0 10px; letter-spacing: -0.01em; }
+.piece-materials { color: var(--mute); font-size: var(--step--1); }
+@media (max-width: 1000px) {
+  .jewel-band { grid-template-columns: 1fr; }
+  .jewel-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .jewel-strip li:nth-child(n+4) { display: none; }
+}
+@media (max-width: 640px) {
+  .jewel-hero { grid-template-columns: 1fr 1fr; height: auto; }
+  .jewel-hero li:first-child { grid-column: 1 / -1; aspect-ratio: 4 / 5; }
+  .jewel-hero li { aspect-ratio: 1; }
+  .site-header nav { gap: 0.9rem; }
+}
+
+.jewel-band .thesis-band-title { font-size: clamp(2rem, 1.1rem + 2.8vw, 3.75rem); overflow-wrap: break-word; }
+@media (max-width: 640px) {
+  .site-header { flex-wrap: wrap; row-gap: 4px; }
+  .site-name { flex-basis: 100%; }
+  .is-home .site-name { display: none; }
+  .site-header nav { gap: 1.1rem; }
+}

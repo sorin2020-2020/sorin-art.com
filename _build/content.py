@@ -389,3 +389,32 @@ ABOUT = {
         ("Languages", "English (advanced), Dutch (conversational)"),
     ],
 }
+
+# ---------------------------------------------------------------- Technopunk jewellery
+# Add one entry to "pieces" each week (newest can go anywhere; the page sorts by date).
+# Images: put photos in _build/media/jewellery/ and list them as "media/jewellery/<file>".
+JEWELLERY = {
+    "title": "Technopunk jewellery",
+    "standfirst": "Wearable pieces made from the insides of old machines. A new one every week.",
+    "intro": [
+        "Every computer that ends up in a drawer still holds something beautiful: the gold-plated grid under a processor, the green maze of a circuit board, copper traces finer than a hair. I take them out of discarded electronics and give them a second life on the body.",
+        "Each piece pairs that salvaged hardware with materials that have had a first life too: leather cut from recycled garments, and semiprecious stones that I cut and polish myself. Processors become earrings, circuit boards become cuffs and rings, and coloured resin holds it all together.",
+        "The jewellery grows out of the same questions as my installations, about what we throw away and how the organic and the mechanical can live together, only at the scale of a hand. I make a new piece every week, and the newest is always at the top of this page.",
+    ],
+    "materials": [
+        ("Hardware", "Processors and circuit boards from recycled computers and devices"),
+        ("Leather", "Cut from recycled garments"),
+        ("Stones", "Semiprecious stones, cut and polished by hand in the studio"),
+        ("Rhythm", "One new piece every week"),
+    ],
+    "strip": ["media/jewellery/2026-10-27-01.jpg", "media/jewellery/2026-10-27-07.jpg", "media/jewellery/2026-10-27-03.jpg", "media/jewellery/2026-10-27-11.jpg", "media/jewellery/2026-10-27-14.jpg"],
+    "hero": ["media/jewellery/2026-10-27-01.jpg", "media/jewellery/2026-10-27-09.jpg", "media/jewellery/2026-10-27-10.jpg"],
+    "pieces": [
+        {
+            "date": "2026-10-27",
+            "title": "The collection so far",
+            "text": "Circuit-board cuffs and rings, CPU earrings, and pendants on leather cords: the pieces made so far, shown together for the first time. Some photos are taken under UV light, where the resin starts to glow.",
+            "images": [f"media/jewellery/2026-10-27-{n:02d}.jpg" for n in range(1, 25)],
+        },
+    ],
+}

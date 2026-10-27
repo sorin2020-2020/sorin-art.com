@@ -1222,5 +1222,197 @@
   "m": "assets/img/vester-alba-experientia-16-m.jpg",
   "mh": 600,
   "mw": 900
+ },
+ "media/jewellery/2026-10-27-01.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-01-l.jpg",
+  "lh": 1800,
+  "lw": 1350,
+  "m": "assets/img/jewellery-2026-10-27-01-m.jpg",
+  "mh": 900,
+  "mw": 675
+ },
+ "media/jewellery/2026-10-27-02.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-02-l.jpg",
+  "lh": 1800,
+  "lw": 1351,
+  "m": "assets/img/jewellery-2026-10-27-02-m.jpg",
+  "mh": 900,
+  "mw": 675
+ },
+ "media/jewellery/2026-10-27-03.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-03-l.jpg",
+  "lh": 1800,
+  "lw": 1013,
+  "m": "assets/img/jewellery-2026-10-27-03-m.jpg",
+  "mh": 900,
+  "mw": 507
+ },
+ "media/jewellery/2026-10-27-04.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-04-l.jpg",
+  "lh": 1800,
+  "lw": 1013,
+  "m": "assets/img/jewellery-2026-10-27-04-m.jpg",
+  "mh": 900,
+  "mw": 507
+ },
+ "media/jewellery/2026-10-27-05.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-05-l.jpg",
+  "lh": 1013,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-05-m.jpg",
+  "mh": 507,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-06.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-06-l.jpg",
+  "lh": 810,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-06-m.jpg",
+  "mh": 405,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-07.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-07-l.jpg",
+  "lh": 810,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-07-m.jpg",
+  "mh": 405,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-08.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-08-l.jpg",
+  "lh": 810,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-08-m.jpg",
+  "mh": 405,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-09.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-09-l.jpg",
+  "lh": 1800,
+  "lw": 1798,
+  "m": "assets/img/jewellery-2026-10-27-09-m.jpg",
+  "mh": 900,
+  "mw": 899
+ },
+ "media/jewellery/2026-10-27-10.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-10-l.jpg",
+  "lh": 1800,
+  "lw": 810,
+  "m": "assets/img/jewellery-2026-10-27-10-m.jpg",
+  "mh": 900,
+  "mw": 405
+ },
+ "media/jewellery/2026-10-27-11.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-11-l.jpg",
+  "lh": 1800,
+  "lw": 810,
+  "m": "assets/img/jewellery-2026-10-27-11-m.jpg",
+  "mh": 900,
+  "mw": 405
+ },
+ "media/jewellery/2026-10-27-12.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-12-l.jpg",
+  "lh": 1800,
+  "lw": 840,
+  "m": "assets/img/jewellery-2026-10-27-12-m.jpg",
+  "mh": 900,
+  "mw": 420
+ },
+ "media/jewellery/2026-10-27-13.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-13-l.jpg",
+  "lh": 1800,
+  "lw": 840,
+  "m": "assets/img/jewellery-2026-10-27-13-m.jpg",
+  "mh": 900,
+  "mw": 420
+ },
+ "media/jewellery/2026-10-27-14.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-14-l.jpg",
+  "lh": 840,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-14-m.jpg",
+  "mh": 420,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-15.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-15-l.jpg",
+  "lh": 840,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-15-m.jpg",
+  "mh": 420,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-16.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-16-l.jpg",
+  "lh": 840,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-16-m.jpg",
+  "mh": 420,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-17.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-17-l.jpg",
+  "lh": 840,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-17-m.jpg",
+  "mh": 420,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-18.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-18-l.jpg",
+  "lh": 840,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-18-m.jpg",
+  "mh": 420,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-19.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-19-l.jpg",
+  "lh": 1800,
+  "lw": 1350,
+  "m": "assets/img/jewellery-2026-10-27-19-m.jpg",
+  "mh": 900,
+  "mw": 675
+ },
+ "media/jewellery/2026-10-27-20.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-20-l.jpg",
+  "lh": 1800,
+  "lw": 1013,
+  "m": "assets/img/jewellery-2026-10-27-20-m.jpg",
+  "mh": 900,
+  "mw": 507
+ },
+ "media/jewellery/2026-10-27-21.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-21-l.jpg",
+  "lh": 1800,
+  "lw": 810,
+  "m": "assets/img/jewellery-2026-10-27-21-m.jpg",
+  "mh": 900,
+  "mw": 405
+ },
+ "media/jewellery/2026-10-27-22.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-22-l.jpg",
+  "lh": 810,
+  "lw": 1800,
+  "m": "assets/img/jewellery-2026-10-27-22-m.jpg",
+  "mh": 405,
+  "mw": 900
+ },
+ "media/jewellery/2026-10-27-23.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-23-l.jpg",
+  "lh": 1800,
+  "lw": 810,
+  "m": "assets/img/jewellery-2026-10-27-23-m.jpg",
+  "mh": 900,
+  "mw": 405
+ },
+ "media/jewellery/2026-10-27-24.jpg": {
+  "l": "assets/img/jewellery-2026-10-27-24-l.jpg",
+  "lh": 1800,
+  "lw": 810,
+  "m": "assets/img/jewellery-2026-10-27-24-m.jpg",
+  "mh": 900,
+  "mw": 405
  }
 }

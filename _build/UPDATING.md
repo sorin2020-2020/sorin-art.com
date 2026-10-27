@@ -28,3 +28,17 @@ groups in `GROUPS` (`"in-progress"` for unfinished work), and point `cover` and
 ## Requirements
 
 Python 3 with Pillow (`pip install pillow`).
+
+## Add this week's jewellery piece
+
+1. Put the photos in `_build/media/jewellery/` (for example `2026-11-03-01.jpg`, `2026-11-03-02.jpg`).
+2. In `content.py`, add an entry to `JEWELLERY["pieces"]`:
+
+   ```python
+   {"date": "2026-11-03", "title": "CPU earrings, amethyst",
+    "text": "One or two sentences about the piece.",
+    "materials": "Intel processors, amethyst cut in the studio, leather from a recycled jacket",
+    "images": ["media/jewellery/2026-11-03-01.jpg", "media/jewellery/2026-11-03-02.jpg"]},
+   ```
+3. Optionally change `JEWELLERY["strip"]` (the five photos on the home page) and `JEWELLERY["hero"]` (the three large photos at the top of the jewellery page).
+4. Run `python3 _build/build.py`, commit and push.

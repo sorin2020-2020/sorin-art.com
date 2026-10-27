@@ -18,6 +18,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)  # repository root = published site
 sys.path.insert(0, HERE)
 from content import ARTIST, GROUPS, PROJECTS, ABOUT  # noqa: E402
+try:
+    from content import JEWELLERY  # noqa: E402
+except ImportError:
+    JEWELLERY = None
 
 RAW = sys.argv[1] if len(sys.argv) > 1 else None
 MANIFEST = os.path.join(HERE, "images.json")
@@ -104,6 +108,7 @@ def page(title, body, depth=0, desc=None, cls="", path="", image=None, extra_hea
   <a class="site-name" href="{r}index.html">{e(ARTIST['name'])}</a>
   <nav aria-label="Main">
     <a href="{r}index.html#work">Work</a>
+    {f'<a href="{r}jewellery.html">Jewellery</a>' if JEWELLERY else ''}
     <a href="{r}about.html">About</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -267,11 +272,17 @@ for p in PROJECTS:
             img_meta[k] = img(k, p["slug"])
     p["_gallery"] = list(dict.fromkeys(p.get("gallery", "").split()))
 portrait = img(ABOUT["portrait"], "portrait", 1)
+if JEWELLERY:
+    for pc in JEWELLERY["pieces"]:
+        for k in pc["images"]:
+            img_meta[k] = img(k, "jewellery-" + pc["date"])
+    for k in JEWELLERY["hero"]:
+        img_meta[k] = img(k, "jewellery")
 feat = PROJECTS[0]
 OG_DEFAULT = img_meta[feat["lead"]]["l"]
 
 # ---------------------------------------------------------------- clean generated files
-for f in ("index.html", "about.html", "404.html"):
+for f in ("index.html", "about.html", "404.html", "jewellery.html"):
     if os.path.exists(os.path.join(OUT, f)):
         os.remove(os.path.join(OUT, f))
 shutil.rmtree(os.path.join(OUT, "work"), ignore_errors=True)
@@ -414,6 +425,19 @@ if thesis:
     <span class="thesis-band-link">Read the introduction</span>
   </span>
 </a>"""
+jewel_band = ""
+if JEWELLERY:
+    latest = sorted(JEWELLERY["pieces"], key=lambda x: x["date"], reverse=True)[0]
+    strip = "".join(f'<li><img src="{img_meta[k]["m"]}" width="{img_meta[k]["mw"]}" height="{img_meta[k]["mh"]}" alt="" loading="lazy" decoding="async"></li>' for k in (JEWELLERY.get("strip") or latest["images"])[:5])
+    jewel_band = f"""<a class="jewel-band" href="jewellery.html">
+  <span class="jewel-band-text">
+    <span class="feature-kicker">New every week</span>
+    <span class="thesis-band-title">{e(JEWELLERY['title'])}</span>
+    <span class="feature-sum">{e(JEWELLERY['standfirst'])}</span>
+    <span class="thesis-band-link">See the pieces</span>
+  </span>
+  <ul class="jewel-strip" aria-hidden="true">{strip}</ul>
+</a>"""
 index_body = f"""<section class="hero">
   <h1 class="wordmark"><span>Sorin</span> <span>Angeleanu</span></h1>
   <div class="hero-foot">
@@ -430,12 +454,53 @@ index_body = f"""<section class="hero">
   </span>
 </a>
 {thesis_band}
+{jewel_band}
 <div class="work" id="work">
   <nav class="jump" aria-label="Work categories"><ul>{jump}</ul></nav>
 {chr(10).join(groups_html)}
 </div>"""
 with open(os.path.join(OUT, "index.html"), "w") as f:
     f.write(page(ARTIST["name"], index_body, cls="is-home", path=""))
+
+# ---------------------------------------------------------------- jewellery
+if JEWELLERY:
+    J = JEWELLERY
+    hero = "".join(f'<li><a href="{img_meta[k]["l"]}" data-lightbox><img src="{img_meta[k]["l"]}" width="{img_meta[k]["lw"]}" height="{img_meta[k]["lh"]}" alt="" decoding="async"></a></li>' for k in J["hero"])
+    mats = "\n".join(f"<div><dt>{e(a)}</dt><dd>{e(b)}</dd></div>" for a, b in J["materials"])
+    pieces = []
+    for pc in sorted(J["pieces"], key=lambda x: x["date"], reverse=True):
+        pics = "".join(
+            f'<li><a href="{img_meta[k]["l"]}" data-lightbox><img src="{img_meta[k]["m"]}" width="{img_meta[k]["mw"]}" height="{img_meta[k]["mh"]}" alt="{e(pc["title"])}, photo {i} of {len(pc["images"])}" loading="lazy" decoding="async"></a></li>'
+            for i, k in enumerate(pc["images"], 1))
+        mat = f'<p class="piece-materials">{e(pc["materials"])}</p>' if pc.get("materials") else ""
+        pieces.append(f"""<article class="piece" id="piece-{pc['date']}">
+  <header class="piece-head">
+    <time datetime="{pc['date']}">{e(nice_date(pc['date']))}</time>
+    <h3>{e(pc['title'])}</h3>
+    <p>{e(pc['text'])}</p>{mat}
+  </header>
+  <ul class="gallery-grid">{pics}</ul>
+</article>""")
+    jbody = f"""<article class="jewellery">
+<div class="project-head">
+  <h1>{e(J['title'])}</h1>
+  <p class="standfirst">{e(J['standfirst'])}</p>
+</div>
+<ul class="jewel-hero">{hero}</ul>
+<div class="project-body">
+  <div class="prose">{''.join(f'<p>{e(t)}</p>' for t in J['intro'])}
+    <p><a class="button" href="mailto:{e(ARTIST['email'])}?subject=Technopunk%20jewellery">Ask about a piece</a></p>
+  </div>
+  <dl class="facts">{mats}</dl>
+</div>
+<section class="pieces" aria-labelledby="pieces-h">
+  <h2 id="pieces-h" class="gallery-title">The pieces <span>{len(J['pieces'])}</span></h2>
+  {''.join(pieces)}
+</section>
+</article>"""
+    with open(os.path.join(OUT, "jewellery.html"), "w") as f:
+        f.write(page(J["title"], jbody, desc=f"{J['title']} by {ARTIST['name']}: {J['standfirst']}",
+                     cls="is-jewellery", path="jewellery.html", image=img_meta[J["hero"][0]]["l"]))
 
 # ---------------------------------------------------------------- about
 rows = lambda lst: "\n".join(f"<div><dt>{e(a)}</dt><dd>{e(b)}</dd></div>" for a, b in lst)
@@ -470,7 +535,7 @@ with open(os.path.join(OUT, "404.html"), "w") as f:
 open(os.path.join(OUT, "CNAME"), "w").write(DOMAIN + "\n")
 open(os.path.join(OUT, ".nojekyll"), "w").close()
 shutil.copy(os.path.join(HERE, "static", "README.md"), os.path.join(OUT, "README.md"))
-urls = ["", "about.html"] + [f"work/{p['slug']}.html" for p in order]
+urls = ["", "about.html"] + (["jewellery.html"] if JEWELLERY else []) + [f"work/{p['slug']}.html" for p in order]
 open(os.path.join(OUT, "sitemap.xml"), "w").write(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "".join(f"  <url><loc>{BASE}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
