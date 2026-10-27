@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sorin-art.com/sitemap.xml
