@@ -262,7 +262,7 @@ def log_html(p):
 img_meta = {}
 for p in PROJECTS:
     keys = list(dict.fromkeys(p.get("gallery", "").split()))
-    for extra in (p.get("cover"), p.get("lead")):
+    for extra in (p.get("cover"), p.get("lead"), (p.get("clip") or {}).get("poster")):
         if extra and extra not in keys:
             keys.append(extra)
     for i, k in enumerate(keys, 1):
@@ -365,7 +365,10 @@ for i, p in enumerate(order):
   <h1>{e(p['title'])}</h1>
   <p class="standfirst">{e(p['summary'])}</p>
 </div>"""]
-        if p.get("video"):
+        if p.get("clip"):
+            c = p["clip"]; pm = img_meta[c["poster"]]
+            parts.append(f'''<figure class="lead lead--clip"><video src="../{c['src']}" poster="../{pm['l']}" width="{pm['lw']}" height="{pm['lh']}" muted loop playsinline preload="metadata" data-autoplay-clip controls></video><figcaption>{e(c['caption'])}</figcaption></figure>''')
+        elif p.get("video"):
             parts.append(video_html(p, 1))
         else:
             lead = p.get("lead") or p.get("cover")

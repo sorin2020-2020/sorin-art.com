@@ -386,3 +386,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
   .is-home .site-name { display: none; }
   .site-header nav { gap: 1.1rem; }
 }
+.lead--clip { background: #000; }
+.lead--clip video { display: block; width: 100%; height: auto; max-height: 86vh; }
+.lead figcaption { background: var(--paper); padding-top: 10px; font-size: var(--step--1); color: var(--mute); }
+.prose a { color: inherit; }

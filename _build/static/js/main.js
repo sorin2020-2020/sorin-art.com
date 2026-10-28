@@ -204,3 +204,13 @@
     }
   });
 })();
+
+// Muted looping clips: play when visible, unless the visitor prefers reduced motion
+(function () {
+  var clips = document.querySelectorAll("video[data-autoplay-clip]");
+  if (!clips.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { var v = en.target; if (en.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else v.pause(); });
+  }, { threshold: 0.3 });
+  clips.forEach(function (v) { io.observe(v); });
+})();

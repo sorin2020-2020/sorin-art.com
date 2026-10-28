@@ -1223,6 +1223,22 @@
   "mh": 600,
   "mw": 900
  },
+ "media/black-holes/concept-image.png": {
+  "l": "assets/img/merging-black-holes-01-l.jpg",
+  "lh": 736,
+  "lw": 1360,
+  "m": "assets/img/merging-black-holes-01-m.jpg",
+  "mh": 487,
+  "mw": 900
+ },
+ "media/black-holes/concept-still.jpg": {
+  "l": "assets/img/merging-black-holes-02-l.jpg",
+  "lh": 720,
+  "lw": 1280,
+  "m": "assets/img/merging-black-holes-02-m.jpg",
+  "mh": 506,
+  "mw": 900
+ },
  "media/jewellery/2026-10-27-01.jpg": {
   "l": "assets/img/jewellery-2026-10-27-01-l.jpg",
   "lh": 1800,

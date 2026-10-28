@@ -329,6 +329,36 @@ PROJECTS = [
     },
     # ---------------- In progress
     {
+        "slug": "merging-black-holes",
+        "group": "in-progress",
+        "title": "Merging Black Holes",
+        "year": "",
+        "medium": "Kinetic installation, electromagnets, ferrofluid",
+        "summary": "Two black holes made of tiny cubes orbit above a dark liquid skin, pulled into waves by an array of electromagnets. From time to time, one cube changes colour.",
+        "cover": "media/black-holes/concept-image.png",
+        "clip": {"src": "assets/video/black-holes-concept.mp4", "poster": "media/black-holes/concept-still.jpg",
+                 "caption": "Concept visualisation, made with Kling AI. The real installation is being built now."},
+        "meta": [
+            ("Status", "In development, first prototype"),
+            ("Prototype", "An array of 49 electromagnetic coils"),
+            ("Working title", "Merging Black Holes"),
+        ],
+        "links": [("Inspiration: the amoeba wave pool, Japan", "https://thekidshouldseethis.com/post/amoeba-wave-pool-japan")],
+        "body": [
+            ("p", "Two black holes slowly merge in the middle of a white room. Their surfaces are a skin of thousands of tiny black cubes, joined by a twisting bridge of the same material, and the pair turns slowly around the point where they meet. Below them, the fabric of space-time bends: a dark surface rises in two soft bumps that follow each sphere as it moves, without ever touching it."),
+            ("p", "Most of the cubes stay black, but from time to time one of them lights up in another colour. Each one stands for the errors we make when we assume we understand the quantum properties of space-time, and for the things that are not what they first seem to be. A few of these coloured cubes have fallen to the floor, left behind like debris from the black holes."),
+            ("h", "How it works"),
+            ("p", "The floor is a thin layer of magnetic liquid, probably ferrofluid, spread over a surface with colourful geometric structures sitting on it. Underneath, an array of electromagnetic coils pulses short, intense magnetic fields into the liquid, so that it lifts, ripples and follows the spheres above."),
+            ("p", "The first prototype has 49 coils. The plan is a much larger array whose pulses overlap into standing interference waves. The idea was sparked by the amoeba wave pool in Japan, where moving walls shape the water; here I want to try a different approach and move the liquid with magnetism alone."),
+        ],
+        "log": [
+            {"date": "2026-10-28", "title": "Concept and a first array of 49 coils",
+             "text": ["The concept is fixed in an image and a short visualisation, and the first prototype array of 49 electromagnetic coils is under construction. Next: testing how strongly short pulses can lift a thin layer of ferrofluid."],
+             "images": ["media/black-holes/concept-image.png"]},
+        ],
+        "gallery": "",
+    },
+    {
         "slug": "natures-symphony",
         "group": "in-progress",
         "title": "The Hidden Language of Nature's Symphony",
