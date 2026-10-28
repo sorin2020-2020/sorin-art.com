@@ -312,7 +312,7 @@ def thesis_page(p, prev_p, next_p):
 <div class="thesis-grid">
   <figure class="flipbook" data-flipbook data-frames="{n}" data-src="../assets/thesis/f{{n}}.jpg" data-scroll-scrub>
     <div class="flipbook-stage" tabindex="0" role="img" aria-label="Flipbook: a young man walking through the Amsterdam rain slowly turns into a machine. Use the left and right arrow keys to turn the pages.">
-      <img src="../assets/thesis/f001.jpg" width="520" height="803" alt="" draggable="false">
+      <img src="../assets/thesis/f001.jpg" width="512" height="768" alt="" draggable="false">
       <span class="flipbook-corner" aria-hidden="true"></span>
     </div>
     <figcaption>
@@ -416,7 +416,7 @@ thesis_band = ""
 if thesis:
     thesis_band = f"""<a class="thesis-band" href="work/{thesis['slug']}.html">
   <span class="thesis-band-flip" data-flipbook data-frames="{thesis['thesis']['frames']}" data-src="assets/thesis/f{{n}}.jpg" data-autoplay>
-    <img src="assets/thesis/f001.jpg" width="520" height="803" alt="" loading="lazy">
+    <img src="assets/thesis/f001.jpg" width="512" height="768" alt="" loading="lazy">
   </span>
   <span class="thesis-band-text">
     <span class="feature-kicker">{e(thesis['thesis']['version_label'])}</span>

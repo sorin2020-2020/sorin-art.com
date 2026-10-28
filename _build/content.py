@@ -173,7 +173,7 @@ PROJECTS = [
         "meta": [
             ("Version one", "2024, graduation thesis, Interactive/Media/Design, Royal Academy of Art (KABK), The Hague"),
             ("Version two", "October 2026, revised and expanded"),
-            ("Images", "92 frames made with Stable Diffusion and Deforum"),
+            ("Images", "120 frames made with Stable Diffusion and Deforum"),
             ("Keywords", "AI, i-reality, echo chambers, filter bubbles, sycophancy, synthetic media, attention economy"),
         ],
         "links": [("Download the PDF", "../assets/thesis/customized-realities-v2.pdf")],
@@ -195,7 +195,7 @@ PROJECTS = [
         "thesis": {
             "version_label": "Graduation thesis, version 2 update",
             "band_text": "My graduation thesis on echo chambers and synthetic minds, rewritten in 2026 with the evidence that has arrived since. The book is also a flipbook.",
-            "frames": 92,
+            "frames": 120,
             "pdf": "customized-realities-v2.pdf",
             "pdf_size": "5.4 MB",
             "flip_caption": "Every page of the printed thesis carries one frame of this drawing. Hold the corner of the book, let the pages slip from under your thumb, and the young man walking through the Amsterdam rain slowly turns into a machine. Here you can do the same: drag across the picture, use the slider, or simply scroll.",

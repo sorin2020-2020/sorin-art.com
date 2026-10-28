@@ -281,7 +281,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 0.4rem var(--gutter);
   margin-top: clamp(56px, 8vw, 104px); text-decoration: none; color: inherit; align-items: end;
 }
-.thesis-band-flip { display: block; background: #fff; max-width: 280px; aspect-ratio: 520 / 803; overflow: hidden; }
+.thesis-band-flip { display: block; background: #fff; max-width: 280px; aspect-ratio: 512 / 768; overflow: hidden; }
 .thesis-band-flip img { width: 100%; height: 100%; object-fit: cover; }
 .thesis-band-text { display: flex; flex-direction: column; gap: 0.4rem; max-width: 52ch; padding-bottom: 6px; }
 .thesis-band-title { font-size: var(--step-3); font-weight: 800; font-stretch: 115%; letter-spacing: -0.03em; line-height: 0.95; }
@@ -295,7 +295,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 .thesis-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 40px clamp(32px, 6vw, 96px); align-items: start; }
 .flipbook { margin: 0; position: sticky; top: 20px; }
 .flipbook-stage {
-  position: relative; background: #fff; aspect-ratio: 520 / 803; height: min(803px, calc(100vh - 230px)); width: auto; max-width: 100%; margin-right: auto;
+  position: relative; background: #fff; aspect-ratio: 512 / 768; height: min(768px, calc(100vh - 230px)); width: auto; max-width: 100%; margin-right: auto;
   cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none;
   box-shadow: 1px 1px 0 #d9dbdf, 2px 2px 0 #fff, 3px 3px 0 #d9dbdf, 4px 4px 0 #fff, 5px 5px 0 #d9dbdf;
 }
