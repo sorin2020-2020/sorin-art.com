@@ -390,3 +390,6 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 .lead--clip video { display: block; width: 100%; height: auto; max-height: 86vh; }
 .lead figcaption { background: var(--paper); padding-top: 10px; font-size: var(--step--1); color: var(--mute); }
 .prose a { color: inherit; }
+/* keep "Technopunk" whole: size the title to its column */
+.jewel-band-text { container-type: inline-size; }
+.jewel-band .thesis-band-title { overflow-wrap: normal; word-break: keep-all; hyphens: none; font-size: clamp(1.9rem, 0.9rem + 2.4vw, 3.4rem); font-size: min(3.75rem, 14.5cqi); }
