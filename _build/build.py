@@ -29,6 +29,13 @@ Image.MAX_IMAGE_PIXELS = None
 e = html.escape
 DOMAIN = "sorin-art.com"
 BASE = f"https://{DOMAIN}/"
+import hashlib
+def _hash(*paths):
+    h = hashlib.md5()
+    for p in paths:
+        h.update(open(os.path.join(HERE, "static", p), "rb").read())
+    return h.hexdigest()[:8]
+ASSET_V = _hash("css/style.css", "js/main.js")
 
 # ---------------------------------------------------------------- images
 manifest = json.load(open(MANIFEST)) if os.path.exists(MANIFEST) else {}
@@ -100,7 +107,7 @@ def page(title, body, depth=0, desc=None, cls="", path="", image=None, extra_hea
 <link rel="canonical" href="{BASE}{path}">
 <link rel="icon" href="{r}assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="{r}assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/css/style.css">
+<link rel="stylesheet" href="{r}assets/css/style.css?v={ASSET_V}">
 {extra_head}</head>
 <body class="{cls}">
 <a class="skip" href="#main">Skip to content</a>
@@ -125,7 +132,7 @@ def page(title, body, depth=0, desc=None, cls="", path="", image=None, extra_hea
     <li>&copy; <span data-year>2026</span> {e(ARTIST['name'])}</li>
   </ul>
 </footer>
-<script src="{r}assets/js/main.js" defer></script>
+<script src="{r}assets/js/main.js?v={ASSET_V}" defer></script>
 </body>
 </html>
 """
