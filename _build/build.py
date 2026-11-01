@@ -251,6 +251,11 @@ def log_html(p):
             pics = '<ul class="log-images">' + "".join(
                 f'<li><a href="../{img_meta[k]["l"]}" data-lightbox><img src="../{img_meta[k]["m"]}" width="{img_meta[k]["mw"]}" height="{img_meta[k]["mh"]}" alt="{e(p["title"])}, {e(nice_date(u["date"]))}" loading="lazy" decoding="async"></a></li>'
                 for k in u["images"]) + "</ul>"
+        for c in u.get("clips", []):
+            pm = img_meta[c["poster"]]
+            pics += (f'<figure class="log-clip"><video src="../{c["src"]}" poster="../{pm["l"]}" width="{pm["lw"]}" height="{pm["lh"]}" '
+                     f'muted loop playsinline preload="metadata" data-autoplay-clip controls></video>'
+                     f'<figcaption>{e(c["caption"])}</figcaption></figure>')
         title = f'<h3>{e(u["title"])}</h3>' if u.get("title") else ""
         text = "".join(f"<p>{e(t)}</p>" for t in ([u["text"]] if isinstance(u.get("text"), str) else u.get("text", [])))
         rows.append(f"""<li class="log-entry">
@@ -277,6 +282,8 @@ for p in PROJECTS:
     for u in p.get("log", []):
         for k in u.get("images", []):
             img_meta[k] = img(k, p["slug"])
+        for c in u.get("clips", []):
+            img_meta[c["poster"]] = img(c["poster"], p["slug"])
     p["_gallery"] = list(dict.fromkeys(p.get("gallery", "").split()))
 portrait = img(ABOUT["portrait"], "portrait", 1)
 if JEWELLERY:

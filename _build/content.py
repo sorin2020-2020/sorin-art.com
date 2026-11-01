@@ -352,6 +352,16 @@ PROJECTS = [
             ("p", "The first prototype has 49 coils. The plan is a much larger array whose pulses overlap into standing interference waves. The idea was sparked by the amoeba wave pool in Japan, where moving walls shape the water; here I want to try a different approach and move the liquid with magnetism alone."),
         ],
         "log": [
+            {"date": "2026-11-01", "title": "Simulating the installation and a 1/5 scale prototype",
+             "text": ["The concept has changed. The two black holes are now separate spheres, one a metre wide and one 45 cm, each covered in thousands of 1 cm black cubes. They hang from a beam on the ceiling and orbit their shared centre of mass, the big one barely moving while the small one swings wide around it. Like real black holes they also spin, and the plane of their orbit is tilted and slowly precesses.",
+                      "Below them, the dark liquid answers with ripples that curl into spirals, a nod to the way spinning black holes drag space-time around with them. Now and then a single cube lights up in colour.",
+                      "To make the tilted, precessing orbit real, I designed a mechanism borrowed from helicopters: a swashplate moved by three servos tilts the rotating beam, all driven from the ceiling. A 1/5 scale prototype, with printed spheres 20 cm and 9 cm across, is next on the printer. Both films were rendered in Blender from the actual parts."],
+             "clips": [
+                 {"src": "assets/video/black-holes-installation-sim.mp4", "poster": "media/black-holes/installation-sim-poster.png",
+                  "caption": "Simulation of the installation: tilted, precessing orbit, spinning spheres and spiral ripples."},
+                 {"src": "assets/video/black-holes-prototype-mechanism.mp4", "poster": "media/black-holes/mechanism-poster.png",
+                  "caption": "The 1/5 scale prototype mechanism: stepper, swashplate, teetering beam and spin motors."},
+             ]},
             {"date": "2026-10-28", "title": "Concept and a first array of 49 coils",
              "text": ["The concept is fixed in an image and a short visualisation, and the first prototype array of 49 electromagnetic coils is under construction. Next: testing how strongly short pulses can lift a thin layer of ferrofluid."],
              "images": ["media/black-holes/concept-image.png"]},
