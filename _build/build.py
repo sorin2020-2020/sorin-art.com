@@ -274,7 +274,7 @@ def log_html(p):
 img_meta = {}
 for p in PROJECTS:
     keys = list(dict.fromkeys(p.get("gallery", "").split()))
-    for extra in (p.get("cover"), p.get("lead"), (p.get("clip") or {}).get("poster")):
+    for extra in (p.get("cover"), p.get("lead"), (p.get("clip") or {}).get("poster"), (p.get("next_version") or {}).get("poster")):
         if extra and extra not in keys:
             keys.append(extra)
     for i, k in enumerate(keys, 1):
@@ -396,6 +396,13 @@ for i, p in enumerate(order):
 {facts_html(p)}
   </dl>
 </div>""")
+        if p.get("next_version"):
+            nv = p["next_version"]; pm = img_meta[nv["poster"]]
+            parts.append(f"""<section class="next-version" aria-labelledby="nv-{p['slug']}">
+  <h2 id="nv-{p['slug']}" class="gallery-title">{e(nv['title'])} <span>{e(nv['status'])}</span></h2>
+  <figure class="lead lead--clip"><video src="../{nv['clip']}" poster="../{pm['l']}" width="{pm['lw']}" height="{pm['lh']}" muted loop playsinline preload="metadata" data-autoplay-clip controls></video><figcaption>{e(nv['caption'])}</figcaption></figure>
+  <div class="prose nv-text">{''.join(f'<p>{e(t)}</p>' for t in nv['text'])}</div>
+</section>""")
         parts.append(log_html(p))
         gal = p["_gallery"] if not (p.get("video") and p.get("cover") is None) else []
         if gal:

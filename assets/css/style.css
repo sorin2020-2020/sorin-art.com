@@ -396,3 +396,5 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 /* keep "Technopunk" whole: size the title to its column */
 .jewel-band-text { container-type: inline-size; }
 .jewel-band .thesis-band-title { overflow-wrap: normal; word-break: keep-all; hyphens: none; font-size: clamp(1.9rem, 0.9rem + 2.4vw, 3.4rem); font-size: min(3.75rem, 14.5cqi); }
+.next-version { margin-top: clamp(56px, 8vw, 112px); }
+.nv-text { margin-top: 28px; }

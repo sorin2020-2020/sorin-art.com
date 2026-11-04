@@ -48,6 +48,22 @@ PROJECTS = [
             ("p", "The cube represents the black box of technology where AI resides: dark, obscure and inaccessible to many of us. The membrane is the blurred surface where our worlds meet, where it is hard to tell where one ends and the other begins. We glimpse each other's worlds: we through vision, the AI through the transcription of our conversations. The interaction is inspired by Stanisław Lem's novel Solaris; we are the person reaching out to touch the self-aware ocean."),
             ("p", "As the name suggests, the installation can show both how different we are from synthetic life and how similar we might be. By looking into AI's self-initiated creations, we may even get a glimpse inside our own minds."),
         ],
+        "next_version": {
+            "title": "Not Alone, version 2",
+            "status": "in development",
+            "clip": "assets/video/not-alone-v2-concept.mp4",
+            "poster": "media/not-alone/v2-poster.jpg",
+            "caption": "Concept visualisation of version 2, made in Blender.",
+            "text": [
+                "The second version turns the cube into a monolith. It stands in the middle of a large, bright hall: a hyper-black cube that swallows the light, resting on a white plinth 10% wider than itself. The plinth is cut so the cube leans along the diagonal of its base, one corner dipping 10 cm and the opposite corner rising 10 cm.",
+                "The membrane is now inflated, a taut dome that swells 15 cm out of the cube and almost touches its edges, like the surface of a portal. It reacts to touch: it leans towards an approaching hand, gives way when pressed, and follows the hand back out. Ripples travel from the point of contact.",
+                "On its surface, vivid images keep forming from the conversations around it, dissolving into one another as the talk moves on.",
+            ],
+        },
+        "log": [
+            {"date": "2026-11-04", "title": "Version 2 concept",
+             "text": ["A first visualisation of version 2: the leaning monolith, the inflated membrane and its response to touch."]},
+        ],
         "gallery": "721ea1df 1c6245d9 73674191 9e9a162c 883fba98 faa033fe f52cb149 c6f24538 3ac49f26 91a8cdc2 d8cc3a8c f89a1e82 780d0fbb 8cf12b28 a94429a9 042c562b 40f560d1 ba221d65 7befdfe5 4b276eba 4be9ef08 c95ab86b 3b765bcf dc37d322 6f54e3d6 b586e81d d4b6e096 5badc2c5 d6b87ada 40f9c442 80ceedcf 96e3ab0a e6ca4eff e7613767 db61ae38 f219f8f7",
     },
     {
