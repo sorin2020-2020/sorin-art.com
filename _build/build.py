@@ -552,7 +552,7 @@ with open(os.path.join(OUT, "about.html"), "w") as f:
 # ---------------------------------------------------------------- 404
 nf = """<section class="notfound"><h1>Page not found</h1><p>The page may have moved when the site was rebuilt.</p><p><a href="/index.html">Go to all work</a></p></section>"""
 with open(os.path.join(OUT, "404.html"), "w") as f:
-    f.write(page("Page not found", nf, path="404.html").replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
+    f.write(page("Page not found", nf, path="404.html", extra_head="<meta name=\"robots\" content=\"noindex\">\n").replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
             .replace('href="index.html', 'href="/index.html').replace('href="about.html', 'href="/about.html'))
 
 # ---------------------------------------------------------------- domain, seo, housekeeping
