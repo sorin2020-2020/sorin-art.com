@@ -1255,6 +1255,110 @@
   "mh": 506,
   "mw": 900
  },
+ "media/cnc-touch/cover_gear.jpg": {
+  "l": "assets/img/teaching-a-cnc-to-touch-13-l.jpg",
+  "lh": 720,
+  "lw": 755,
+  "m": "assets/img/teaching-a-cnc-to-touch-13-m.jpg",
+  "mh": 720,
+  "mw": 755
+ },
+ "media/cnc-touch/fo6.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-04-l.jpg",
+  "lh": 453,
+  "lw": 957,
+  "m": "assets/img/teaching-a-cnc-to-touch-04-m.jpg",
+  "mh": 426,
+  "mw": 900
+ },
+ "media/cnc-touch/follow2_sketch.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-07-l.jpg",
+  "lh": 685,
+  "lw": 645,
+  "m": "assets/img/teaching-a-cnc-to-touch-07-m.jpg",
+  "mh": 685,
+  "mw": 645
+ },
+ "media/cnc-touch/g2_edge.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-09-l.jpg",
+  "lh": 610,
+  "lw": 1238,
+  "m": "assets/img/teaching-a-cnc-to-touch-09-m.jpg",
+  "mh": 443,
+  "mw": 900
+ },
+ "media/cnc-touch/gear7_1756.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-02-l.jpg",
+  "lh": 755,
+  "lw": 737,
+  "m": "assets/img/teaching-a-cnc-to-touch-02-m.jpg",
+  "mh": 755,
+  "mw": 737
+ },
+ "media/cnc-touch/photo_clip.jpg": {
+  "l": "assets/img/teaching-a-cnc-to-touch-06-l.jpg",
+  "lh": 1013,
+  "lw": 1800,
+  "m": "assets/img/teaching-a-cnc-to-touch-06-m.jpg",
+  "mh": 507,
+  "mw": 900
+ },
+ "media/cnc-touch/photo_gear_plate.jpg": {
+  "l": "assets/img/teaching-a-cnc-to-touch-08-l.jpg",
+  "lh": 1013,
+  "lw": 1800,
+  "m": "assets/img/teaching-a-cnc-to-touch-08-m.jpg",
+  "mh": 507,
+  "mw": 900
+ },
+ "media/cnc-touch/photo_sketch.jpg": {
+  "l": "assets/img/teaching-a-cnc-to-touch-10-l.jpg",
+  "lh": 1800,
+  "lw": 1013,
+  "m": "assets/img/teaching-a-cnc-to-touch-10-m.jpg",
+  "mh": 900,
+  "mw": 507
+ },
+ "media/cnc-touch/poster_gear.jpg": {
+  "l": "assets/img/teaching-a-cnc-to-touch-01-l.jpg",
+  "lh": 720,
+  "lw": 1280,
+  "m": "assets/img/teaching-a-cnc-to-touch-01-m.jpg",
+  "mh": 506,
+  "mw": 900
+ },
+ "media/cnc-touch/probe_guard_v5_schematic.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-03-l.jpg",
+  "lh": 1117,
+  "lw": 1581,
+  "m": "assets/img/teaching-a-cnc-to-touch-03-m.jpg",
+  "mh": 636,
+  "mw": 900
+ },
+ "media/cnc-touch/run1_3d_a.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-12-l.jpg",
+  "lh": 1053,
+  "lw": 1027,
+  "m": "assets/img/teaching-a-cnc-to-touch-12-m.jpg",
+  "mh": 900,
+  "mw": 878
+ },
+ "media/cnc-touch/run1_good.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-11-l.jpg",
+  "lh": 755,
+  "lw": 1441,
+  "m": "assets/img/teaching-a-cnc-to-touch-11-m.jpg",
+  "mh": 472,
+  "mw": 900
+ },
+ "media/cnc-touch/vacbox_preview.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-05-l.jpg",
+  "lh": 990,
+  "lw": 954,
+  "m": "assets/img/teaching-a-cnc-to-touch-05-m.jpg",
+  "mh": 900,
+  "mw": 867
+ },
  "media/jewellery/2026-10-27-01.jpg": {
   "l": "assets/img/jewellery-2026-10-27-01-l.jpg",
   "lh": 1800,
