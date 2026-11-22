@@ -1327,6 +1327,14 @@
   "mh": 506,
   "mw": 900
  },
+ "media/cnc-touch/poster_gear_scan.jpg": {
+  "l": "assets/img/teaching-a-cnc-to-touch-14-l.jpg",
+  "lh": 720,
+  "lw": 1280,
+  "m": "assets/img/teaching-a-cnc-to-touch-14-m.jpg",
+  "mh": 506,
+  "mw": 900
+ },
  "media/cnc-touch/probe_guard_v5_schematic.png": {
   "l": "assets/img/teaching-a-cnc-to-touch-03-l.jpg",
   "lh": 1117,

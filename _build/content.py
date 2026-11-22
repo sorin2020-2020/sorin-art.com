@@ -372,6 +372,13 @@ PROJECTS = [
             ("p", "Two bent probes later, the first law of the project is: always escape up. When something is wrong, the tool never moves sideways; it lifts straight up."),
         ],
         "log": [
+            {"date": "2026-11-22", "title": "The gear, mapped overnight",
+             "text": ["I left the machine alone with the gear for a night and a morning. It finished the outline from the side, then mapped the whole surface by touching down from above: 290 outline points, about 3,950 heights, and the hole in the middle marked as empty air. 5,937 measurements in all.",
+                      "Around midday on Sunday it stopped and reported that the object had moved. Nothing visible had moved, and the probe was still conducting, so the next step is a way to find the origin again from a few outline points and heights. Then the gear can finally be engraved."],
+             "clips": [
+                 {"src": "assets/video/cnc-touch-gear-scan.mp4", "poster": "media/cnc-touch/poster_gear_scan.jpg",
+                  "caption": "The whole gear scan replayed from its log: blue outline contacts, grey heights (lighter is higher), red where the probe touched down on nothing."},
+             ]},
             {"date": "2026-11-21", "title": "Skip forward, and a second sense",
              "text": ["A scan can now stop refining the outline when it has enough, map the height, and finish the open edges by looking from above only, which is far safer for the probe.",
                       "Designed version 5: the object plate rests on four thin pressure sensors. A touch is now electrical contact OR a jump in pressure OR pressure changing fast, so the machine also notices what its tip cannot feel. If the little guard board fails, the machine stops. Not built yet."],
