@@ -9,7 +9,7 @@
 <meta property="og:description" content="Teaching a CNC to Touch: A probe that learns the shape of stones, shells and gears by touch, round by round. Unfinished on purpose.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sorin-art.com/work/teaching-a-cnc-to-touch.html">
-<meta property="og:image" content="https://sorin-art.com/assets/img/teaching-a-cnc-to-touch-13-l.jpg">
+<meta property="og:image" content="https://sorin-art.com/assets/img/teaching-a-cnc-to-touch-15-l.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://sorin-art.com/work/teaching-a-cnc-to-touch.html">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
@@ -48,7 +48,7 @@
   <dl class="facts">
 <div><dt>Year</dt><dd>2026</dd></div>
 <div><dt>Medium</dt><dd>Desktop CNC, touch probe, custom software written with AI</dd></div>
-<div><dt>Status</dt><dd>In progress: scanning works, engraving is next</dd></div>
+<div><dt>Status</dt><dd>In progress: first piece engraved, stones and shells next</dd></div>
 <div><dt>Machine</dt><dd>3018 Pro Ultra CNC, GRBL</dd></div>
 <div><dt>Code</dt><dd>Written in conversation with Claude (Anthropic), tested in a simulator before metal</dd></div>
 <div><dt>Related</dt><dd>Imagine being blind</dd></div>
@@ -56,8 +56,12 @@
   </dl>
 </div>
 <section class="log" aria-labelledby="log-title">
-  <h2 id="log-title" class="gallery-title">Progress log <span>6</span></h2>
+  <h2 id="log-title" class="gallery-title">Progress log <span>7</span></h2>
   <ol class="log-list">
+<li class="log-entry">
+  <time datetime="2026-11-23">23 November 2026</time>
+  <div class="log-body"><h3>Lost, found, and engraved</h3><p>After the stop the machine had forgotten where everything was. A program that searches the gear from above failed, so I touched it by hand instead, with the script telling me each touch: the outside of the teeth, the tops of the teeth, the inner wall of the big rim, the flat ring, the small inner rim. Each set of side touches is a circle, and every circle has the same centre: the gear had not moved by even a tenth of a millimetre. The new zero went in, and touching all 33 teeth from above matched the scan within 0.09 mm.</p><p>Then the tool change. A 15 degree V-bit barely scratched the steel, only dots; a short, wider carbide point did the job. Halfway through, the computer decided to sleep. The program had saved every finished line, so it simply carried on.</p><p>The result: sorin-art.com growing like a slime mould across the flat ring, veins searching in every direction, and on every tooth one frame of a walker slowly turning into a machine. The scan made it possible to follow the surface everywhere and to leave out every spot too close to an edge.</p><ul class="log-images"><li><a href="../assets/img/teaching-a-cnc-to-touch-15-l.jpg" data-lightbox><img src="../assets/img/teaching-a-cnc-to-touch-15-m.jpg" width="900" height="900" alt="Teaching a CNC to Touch, 23 November 2026" loading="lazy" decoding="async"></a></li><li><a href="../assets/img/teaching-a-cnc-to-touch-16-l.jpg" data-lightbox><img src="../assets/img/teaching-a-cnc-to-touch-16-m.jpg" width="855" height="884" alt="Teaching a CNC to Touch, 23 November 2026" loading="lazy" decoding="async"></a></li></ul></div>
+</li>
 <li class="log-entry">
   <time datetime="2026-11-22">22 November 2026</time>
   <div class="log-body"><h3>The gear, mapped overnight</h3><p>I left the machine alone with the gear for a night and a morning. It finished the outline from the side, then mapped the whole surface by touching down from above: 290 outline points, about 3,950 heights, and the hole in the middle marked as empty air. 5,937 measurements in all.</p><p>Around midday on Sunday it stopped and reported that the object had moved. Nothing visible had moved, and the probe was still conducting, so the next step is a way to find the origin again from a few outline points and heights. Then the gear can finally be engraved.</p><figure class="log-clip"><video src="../assets/video/cnc-touch-gear-scan.mp4" poster="../assets/img/teaching-a-cnc-to-touch-14-l.jpg" width="1280" height="720" muted loop playsinline preload="metadata" data-autoplay-clip controls></video><figcaption>The whole gear scan replayed from its log: blue outline contacts, grey heights (lighter is higher), red where the probe touched down on nothing.</figcaption></figure></div>

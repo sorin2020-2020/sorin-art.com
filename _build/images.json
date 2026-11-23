@@ -1263,6 +1263,14 @@
   "mh": 720,
   "mw": 755
  },
+ "media/cnc-touch/engrave_plan.png": {
+  "l": "assets/img/teaching-a-cnc-to-touch-16-l.jpg",
+  "lh": 884,
+  "lw": 855,
+  "m": "assets/img/teaching-a-cnc-to-touch-16-m.jpg",
+  "mh": 884,
+  "mw": 855
+ },
  "media/cnc-touch/fo6.png": {
   "l": "assets/img/teaching-a-cnc-to-touch-04-l.jpg",
   "lh": 453,
@@ -1294,6 +1302,14 @@
   "m": "assets/img/teaching-a-cnc-to-touch-02-m.jpg",
   "mh": 755,
   "mw": 737
+ },
+ "media/cnc-touch/gear7_engraved.jpg": {
+  "l": "assets/img/teaching-a-cnc-to-touch-15-l.jpg",
+  "lh": 1180,
+  "lw": 1180,
+  "m": "assets/img/teaching-a-cnc-to-touch-15-m.jpg",
+  "mh": 900,
+  "mw": 900
  },
  "media/cnc-touch/photo_clip.jpg": {
   "l": "assets/img/teaching-a-cnc-to-touch-06-l.jpg",
